@@ -16,23 +16,24 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container section">
       <div class="controls">
-        <h5 class="header">Choose A Number:</h5>
-        <p class="sub-header">(5 > might cause responsive issues)</p>
+        <h5 class="header body-text">Choose A Number:</h5>
+        <!-- <p class="sub-header body-text">(5 > might cause responsive issues)</p> -->
         <input
         class="input__cards"
           id="newCards"
           type="text"
         />
         <div class="control__buttons">
-          <button id="gen" class="controls__draw">Draw</button>
-          <button id="sortbtn" class="controls__sort">Sort</button>
+          <button id="gen" class="controls__draw btn">Draw</button>
+          <button id="sortbtn" class="controls__sort btn2">Sort</button>
         </div>
       </div>
-      <div id="cards" class="cards__row"></div>
+      <div id="cards" class="cards__row section"></div>
       <div id="cardsLog" class="sorted__row"></div>
     <script type="module" src="/main.js"></script>
     <script

@@ -157,7 +157,8 @@ function logStep(arr, stepNumber) {
   // Create a step number element
   let stepDiv = document.createElement("div");
   stepDiv.innerHTML = `Step ${stepNumber}`; // Display step number
-  stepDiv.style.fontWeight = "700"
+  stepDiv.style.fontWeight = "600"
+  stepDiv.style.color = "var(--clr-light)"
   stepDiv.classList.add("step-number", "text-center", "mb-2"); // Centered and spaced
 
   // Append the step number to the step container
