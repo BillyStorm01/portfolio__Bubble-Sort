@@ -1,0 +1,82 @@
+body {
+  background-color: lightgreen;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.cards__row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+}
+
+.input__cards {
+  width: 15rem;
+  border-radius: .5rem;
+  border: 2px solid black;
+}
+
+.controls__draw {
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+
+.controls__draw:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.controls__sort {
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+
+
+.controls__sort:hover {
+  width: 7rem;
+  border-radius: 0.5rem;
+  transform: translateY(-2px);
+}
+
+#cardsLog {
+    margin-top: 2rem;
+  }
+
+
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    min-width: 475px;
+  }
+
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .sub-header {
+    font-size: 2rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    min-width: 640px;
+  }
+  
+}
