@@ -1,7 +1,6 @@
 body {
   font-family: 'General Sans', sans-serif;
   background-color: var(--clr-dark);
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .controls {
@@ -30,25 +29,24 @@ body {
 }
 
 .input__cards {
-  width: 100%; /* Set to 100% for better responsiveness */
-  max-width: 15rem; /* Use max-width instead of fixed width */
-  border-radius: 0.5rem;
+  width: 15rem;
+  border-radius: .5rem;
   border: 2px solid black;
 }
 
 #cardsLog {
-  margin-top: 2rem;
-}
+    margin-top: 2rem;
+  }
 
 .body-text {
-  color: red;
+  color: var(--clr-light);
 }
+
 
 /* xs */
 @media (max-width: 475px) {
   .container {
-    max-width: 100%; /* Adjust to use max-width */
-    padding: 0 1rem; /* Optional: Add padding for better spacing */
+    min-width: 475px;
   }
 
   .header {
@@ -63,7 +61,7 @@ body {
 /* sm */
 @media (max-width: 640px) {
   .container {
-    max-width: 100%; /* Adjust to use max-width */
-    padding: 0 1rem; /* Optional: Add padding for better spacing */
+    min-width: 640px;
   }
+  
 }
