@@ -2,7 +2,16 @@ import './style.css'
 import './utils.css'
 
 
-window.onload = function () {};
+// Show the popup on page load
+window.onload = function () {
+    document.getElementById('popup').style.display = 'flex';
+};
+
+// Close the popup when the close button is clicked
+document.getElementById('closePopup').onclick = function () {
+    document.getElementById('popup').style.display = 'none';
+};
+
 const numberArr = [2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K", "A"];
 const suits = ["♦", "♥", "♠", "♣"];
 let sortingArr = [];
@@ -251,4 +260,5 @@ function createCardHtml(value, suit) {
 
   return mCard;
 }
+
 
