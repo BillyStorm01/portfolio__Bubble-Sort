@@ -88,8 +88,8 @@ body {
 /* xs */
 @media (max-width: 475px) {
   .container {
-    max-width: 100%; /* Adjust to use max-width */
-    padding: 0 1rem; /* Optional: Add padding for better spacing */
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .popup-content {
